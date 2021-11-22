@@ -8,6 +8,7 @@ namespace CapaDatos
 {
     public class Suministro:Salas
     {
+        //en estos metodos creamos o devolvemos de tipo string los nombres de suministro que da el cine de regalo por cada sala.
         public string SumiSala1()
         {
             return "Gafas 3D";

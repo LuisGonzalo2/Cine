@@ -9,6 +9,7 @@ namespace CapaDatos
     public class Alimentos
     {
         public string NombreAlimentos { get; set; }
+        //En este metodo llamado lista de alimentos, imprimimos una lista de objetos que se usa en la capaLogica
         public void listaAlimentos()
         {
             Alimentos Canguil = new Alimentos();

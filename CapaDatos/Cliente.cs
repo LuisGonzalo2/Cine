@@ -12,6 +12,7 @@ namespace CapaDatos
 
         }
 
+        //En este metodo guardamos el nombbre del Cliente
         public string NombreCliente()
         {
             Cliente nombre = new Cliente();

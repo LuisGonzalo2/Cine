@@ -12,6 +12,7 @@ namespace CapaDatos
         public string Mani { get; set; }
         public int Asientos { get; set; }
         public Salas() { }
+        //En estos metodos creamos las salas y dentro de las salas creamos los asientos disponibles, cada metodo con nombre diferente
         public int Sala1()
         {
             Salas disponiblesAsientos = new Salas();

@@ -12,6 +12,7 @@ namespace CapaDatos
         public string NombreDePelicula { get; set; }
         public int PrecioPelicula { get; set; }
         public Peliculas() { }
+        //En este metodo imprimimos una lista de obejtos llamda lsita de peliculas
         public void listaPeliculas()
         {
 

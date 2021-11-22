@@ -9,7 +9,7 @@ namespace CapaLogica
 {
     public class opciones
     {
-
+        //comprueba segun el numero ingresado en pedirValores y lo comprueba con if, para ver que sala escogio
         public string elejirSala(int num)
         {
             if (num == 1)
@@ -20,9 +20,14 @@ namespace CapaLogica
             {
                 return "Sala #2 2D";
             }
+            if(num == 3)
+            {
+                return "Sala #2 2D";
+            }
+
             return "";
         }
-
+        //Es lo mismo que el metodo anterior, aqui cuando elije que pelicula escoge y retorna una string
         public string elejirpelicula(int num)
         {
             if(num == 1)
@@ -43,6 +48,7 @@ namespace CapaLogica
             }
             return "";
         }
+        //Lo mismo que el metodo anterior, elije los alimentos sengun el numero y devuelve una string
         public string elejirAlimentos(int num)
         {
             if(num == 1)
@@ -59,6 +65,7 @@ namespace CapaLogica
             }
             return "";
         }
+        //En este metodo se crea un objeto para usar un metodo de otra clase y guardar en un tipo string y devolverla
         public string suministrosSalas(int num)
         {
             Suministro suministro = new Suministro();
@@ -79,7 +86,7 @@ namespace CapaLogica
             }
             return "";
         }
-
+        //En este metodo es parecio al de arriba se crea un objeto y devuelve una string
         public int escogerAsientosSalas(int num)
         {
             if (num == 1)
@@ -100,7 +107,7 @@ namespace CapaLogica
                 int valor = numero.Sala3();
                 return valor;
             }
-            return 0;
+            return num;
         }
 
 

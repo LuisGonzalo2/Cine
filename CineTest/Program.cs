@@ -9,15 +9,24 @@ namespace Cine
         static void Main(string[] args)
         {
             Console.Title= "CINE";
+            //inicializamos la variables respuesta para que sirva de ciclo para ingresar a otro cliente
             string respuesta = "S";
             while (respuesta.Equals("S"))
             {
+                //Se crean los objetos con diferentes funciones
+                //El objeto nombre para ver el nombre del usuario
                 Cliente nombre = new Cliente();
+                //El Objeto ver, sirve para describir todo los alimentos, que estan almacenados en una lista previa.
                 Alimentos ver = new Alimentos();
+                //El obejto pedir sirve para pedir valores x
                 pedirValores pedir = new pedirValores();
+                //El objeto elejir para elijir diferentes opciones
                 opciones elejir = new opciones();
+                //El objeto MostrarPelis para mostrar en consola la lista de peliculas
                 Peliculas mostrarPelis = new Peliculas();
+                //El objeto bienvenida para mostrar los mensajes de esa clase
                 Mensajes bienvenida = new Mensajes();
+                //El obejto operar para dar un operacion sencilla.
                 OperarAsientos operar = new OperarAsientos();
                 //Pedir Nombre al usuario
                 bienvenida.bienvenida();
@@ -49,6 +58,7 @@ namespace Cine
                 string sumi = elejir.suministrosSalas(salanumero);
                 VerCliente mostrarconclusion = new VerCliente();
                 mostrarconclusion.cliente(username, peli, sala, numeroAsientos, alimento, sumi, asiento);
+                //Este ciclo sirve para preguntar si desea poner otro cliente
                 do
                 {
                     

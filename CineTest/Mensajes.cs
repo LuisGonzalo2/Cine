@@ -1,15 +1,9 @@
 ﻿using System;
-using CapaDatos;
-using CapaLogica;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Cine
 {
     class Mensajes
     {
+        //mensajes generales, presentados para el usuario
         public Mensajes() { }
         public void bienvenida()
         {

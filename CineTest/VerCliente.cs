@@ -10,7 +10,10 @@ namespace Cine
 {
     class VerCliente
     {
+
         public VerCliente() { }
+
+        //Un metodo que recibe variables para representar un resumen
         public void cliente(string username, string peli, string sala, int numeroasiento, string alimento, string sumi, int totalasientos)
         {
             Console.WriteLine("Tu nombre es: "+username);
